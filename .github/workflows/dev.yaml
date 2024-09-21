@@ -1,8 +1,8 @@
-name: "Pipeline PROD"
+name: "Pipeline DEV"
 
 on:
   push:
-    branches: [ prod ]
+    branches: [ dev ]
 
 permissions:
   id-token: write
@@ -12,8 +12,8 @@ jobs:
   terraform:
     uses: ./.github/workflows/terraform.yaml
     with:
-      environment: prod
+      environment: dev
       aws-region: "us-east-2"
       aws-state-s3-bucket: "fabiosantos.info-pipeline-github-terraform"
       aws-lock-table: "fabiosantos.info-pipeline-github-lock-table"
-      aws-assume-role-arn: "arn:aws:iam::038462754550:role/pipeline_github_terraform"
+      aws-assume-role-arn: "arn:aws:iam::038462754550:role/pipeline_github_terraform" 
