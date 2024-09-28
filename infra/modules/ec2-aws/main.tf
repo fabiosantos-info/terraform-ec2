@@ -13,6 +13,9 @@ provider "aws" {
   region = var.region
 }
 
-resource "aws_s3_bucket" "terraform-aws-bucket" {
-  bucket_prefix = var.bucket_prefix
+resource "aws_instance" "this" {
+  ami           = "ami-0ba8711e0e1da2a52"
+  instance_type = "t2.micro"
+
+ 
 }
