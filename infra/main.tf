@@ -1,5 +1,5 @@
 module "ec2"{
-    source = "./modules/ecs-aws"
+    source = "./modules/ec2-aws"
     region = "us-east-2"
 
 }
