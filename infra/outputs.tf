@@ -1,3 +1,3 @@
-output "aws-ec2-id" {
-  value = module.bucket.aws-bucket-id
+output "security_group_id" {
+  value = module.aws_security_group.security_group_id
 }
