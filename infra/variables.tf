@@ -1,40 +1,40 @@
-variable "instance_name" {
+variable "instanceName" {
   description = "Nome da instância EC2."
   type        = string
  
 }
 
-variable "image_id" {
+variable "imageId" {
   description = "ID da AMI para a instância EC2."
   type        = string
  
 }
 
-variable "instance_type" {
+variable "instanceType" {
   description = "Tipo de instância EC2."
   type        = string
 
 }
 
-variable "key_name" {
+variable "keyName" {
   description = "Nome da chave SSH para acessar a instância."
   type        = string
  
 }
 
-variable "vpc_id" {
+variable "vpcId" {
   description = "ID da VPC onde a instância será criada."
   type        = string
  
 }
 
-variable "security_group_name" {
+variable "securityGroupName" {
   description = "Nome do grupo de segurança."
   type        = string
   
 }
 
-variable "security_group_description" {
+variable "securityGroupDescription" {
   description = "Descrição do grupo de segurança."
   type        = string
  
